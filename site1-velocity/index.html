@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELOCITY | Koketso — Car Culture Unleashed</title>
+  <meta name="description" content="Raw car culture. Drag races, show floors, and one obsessed Golf 7 GTI fanatic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Scanlines / grid overlay -->
+  <div class="overlay-grid"></div>
+
+  <!-- Top warning ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>⚡ DRAG STRIP SEASON LIVE</span><span>•</span>
+      <span>GOLF 7 GTI — STAGE 2 BUILD</span><span>•</span>
+      <span>NEXT MEET: TARMAC SESSIONS, NOV 14</span><span>•</span>
+      <span>#SHIFTYMINDS</span><span>•</span>
+      <span>SHOOT FLAMES. NOT TEXT.</span><span>•</span>
+      <span>⚡ DRAG STRIP SEASON LIVE</span><span>•</span>
+      <span>GOLF 7 GTI — STAGE 2 BUILD</span><span>•</span>
+      <span>NEXT MEET: TARMAC SESSIONS, NOV 14</span><span>•</span>
+      <span>#SHIFTYMINDS</span><span>•</span>
+      <span>SHOOT FLAMES. NOT TEXT.</span><span>•</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">V</span>
+      <span class="logo-text">ELOCITY<span class="dot">.</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="kicker">CAR CULTURE // SOUTH AFRICA</p>
+      <h1 class="hero-title">
+        BURN RUBBER.<br/>
+        <span class="accent">CAPTURE THE CHAOS.</span>
+      </h1>
+      <p class="hero-sub">
+        Drag races, show floors, street builds — seen through the lens of a Golf 7 GTI
+        fanatic with a helmet on and a camera rolling.
+      </p>
+      <div class="hero-cta">
+        <a href="videos.html" class="btn btn-primary">▶ Watch Latest</a>
+        <a href="events.html" class="btn btn-ghost">Upcoming Meets →</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="stat-1">0</strong><span>Events covered</span></div>
+        <div><strong id="stat-2">0</strong><span>Photos shot</span></div>
+        <div><strong id="stat-3">0</strong><span>Drag runs logged</span></div>
+      </div>
+    </div>
+    <div class="hero-car" aria-hidden="true">
+      <svg viewBox="0 0 600 240" class="gti-silhouette">
+        <defs>
+          <linearGradient id="carGrad" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#ff2a6d"/>
+            <stop offset="50%" stop-color="#ff6a00"/>
+            <stop offset="100%" stop-color="#ffee00"/>
+          </linearGradient>
+        </defs>
+        <!-- Stylized low Golf 7 GTI silhouette -->
+        <path d="M40,180 Q60,130 120,120 L180,95 Q230,75 320,78 L420,85 Q480,95 520,120 L560,135 Q585,145 580,175 L560,180 L520,180 Q510,150 470,148 Q430,148 420,180 L180,180 Q170,150 130,148 Q90,148 80,180 Z"
+              fill="url(#carGrad)" opacity="0.95"/>
+        <circle cx="130" cy="180" r="28" fill="#0a0a12" stroke="#ff2a6d" stroke-width="3"/>
+        <circle cx="470" cy="180" r="28" fill="#0a0a12" stroke="#ff2a6d" stroke-width="3"/>
+        <circle cx="130" cy="180" r="10" fill="#ffee00"/>
+        <circle cx="470" cy="180" r="10" fill="#ffee00"/>
+        <!-- Headlight beam -->
+        <path d="M560,145 L620,140 L620,170 L560,170 Z" fill="#ffee00" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="scroll-hint">▼ SCROLL</div>
+  </section>
+
+  <!-- FEATURED / LATEST VIDEO -->
+  <section class="section" id="latest">
+    <div class="section-head">
+      <h2><span class="num">01</span> Latest Drop</h2>
+      <p class="section-sub">Fresh off the memory card.</p>
+    </div>
+    <div class="featured-video">
+      <div class="video-frame">
+        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1600&q=80" alt="Golf GTI on strip" class="video-cover"/>
+        <button class="play-btn" onclick="alert('Video player placeholder — link your YouTube embed in js/content.js')">
+          <svg viewBox="0 0 64 64"><polygon points="22,16 52,32 22,48" fill="#0a0a12"/></svg>
+        </button>
+        <span class="video-tag">DRAG RACE • 4K</span>
+        <span class="video-duration">12:47</span>
+      </div>
+      <div class="featured-info">
+        <p class="eyebrow">FEATURED EPISODE</p>
+        <h3>Stage 2 GTI vs The Strip — Tarmac Sessions Vol.4</h3>
+        <p>
+          Mid-night runs, boost controllers bleeding, and a white-knuckle rematch against a
+          tuned R that refused to stay quiet. This is why we do it.
+        </p>
+        <div class="video-meta">
+          <span>🏁 2.1K runs</span><span>📅 Oct 18, 2026</span><span>⚡ 4K / 60fps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="section alt">
+    <div class="section-head">
+      <h2><span class="num">02</span> Shot From The Pit</h2>
+      <p class="section-sub">Frames that smell like race fuel.</p>
+      <a href="gallery.html" class="section-link">Full gallery →</a>
+    </div>
+    <div class="gallery-grid" id="home-gallery">
+      <!-- populated by JS -->
+    </div>
+  </section>
+
+  <!-- FAVORITE CAR / GTI SPOTLIGHT -->
+  <section class="section gti-spotlight">
+    <div class="spotlight-inner">
+      <div class="spotlight-text">
+        <p class="eyebrow">THE DAILY // THE WEAPON</p>
+        <h2>Golf 7 GTI — <span class="accent">My Obsession.</span></h2>
+        <p>
+          It's not just a car. It's the reason I carry two cameras and a tire pressure gauge
+          everywhere I go. Stage 2, lowered, loud — and always one upgrade away from done.
+        </p>
+        <ul class="spec-list">
+          <li><span>Engine</span><strong>2.0L TSI (CHHB)</strong></li>
+          <li><span>Power</span><strong>290 HP / 420 Nm</strong></li>
+          <li><span>Exhaust</span><strong>Res-delete / Stage 2 tune</strong></li>
+          <li><span>Suspension</span><strong>KW V1 coilovers</strong></li>
+        </ul>
+      </div>
+      <div class="spotlight-visual">
+        <div class="plate">
+          <span class="plate-top">GP</span>
+          <span class="plate-num">GTI 4 LIFE</span>
+          <span class="plate-bot">HAIL THE HATCH</span>
+        </div>
+        <div class="tire"></div>
+        <div class="rpm-gauge">
+          <div class="rpm-needle"></div>
+          <span>RPM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS PREVIEW -->
+  <section class="section">
+    <div class="section-head">
+      <h2><span class="num">03</span> Next On The Calendar</h2>
+      <a href="events.html" class="section-link">Full schedule →</a>
+    </div>
+    <div class="event-list" id="home-events"></div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <h2>Got a show, a strip, or a build worth filming?</h2>
+    <a href="contact.html" class="btn btn-primary">Let's make noise →</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="foot-brand">
+        <span class="logo-mark">V</span>
+        <span class="logo-text">ELOCITY<span class="dot">.</span></span>
+        <p>Car culture, documented at full send.</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4>Explore</h4>
+          <a href="gallery.html">Gallery</a>
+          <a href="videos.html">Videos</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div>
+          <h4>Creator</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="#" class="social">Instagram</a>
+          <a href="#" class="social">YouTube</a>
+          <a href="#" class="social">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Velocity / Koketso. All torque reserved.</span>
+      <span>Built for the strip.</span>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
