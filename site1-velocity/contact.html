@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | VELOCITY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="overlay-grid"></div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>✉ LET'S BUILD SOMETHING LOUD</span><span>•</span><span>COLLABS • SHOWS • SPONSORS</span><span>•</span>
+      <span>✉ LET'S BUILD SOMETHING LOUD</span><span>•</span><span>COLLABS • SHOWS • SPONSORS</span><span>•</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo"><span class="logo-mark">V</span><span class="logo-text">ELOCITY<span class="dot">.</span></span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <section class="page-hero">
+    <p class="kicker">06 // GET IN TOUCH</p>
+    <h1>Slide In.<br/><span style="background:linear-gradient(90deg,#ff2a6d,#ff6a00,#ffee00);-webkit-background-clip:text;background-clip:text;color:transparent">Make Noise.</span></h1>
+  </section>
+
+  <section class="contact-wrap">
+    <div class="contact-info">
+      <h2>Let's Work.</h2>
+      <p id="contact-intro"></p>
+      <ul class="contact-list" id="contact-list"></ul>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <h3>// Send a message</h3>
+      <div class="form-row">
+        <label>Name</label>
+        <input type="text" name="name" required placeholder="Your name"/>
+      </div>
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" name="email" required placeholder="you@example.com"/>
+      </div>
+      <div class="form-row">
+        <label>Reason</label>
+        <select name="reason">
+          <option>Collab / Sponsorship</option>
+          <option>Event coverage</option>
+          <option>Feature my build</option>
+          <option>General shout</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Message</label>
+        <textarea name="message" required placeholder="Tell me about the build / show / idea..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">SEND MESSAGE ⚡</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="foot-brand"><span class="logo-mark">V</span><span class="logo-text">ELOCITY<span class="dot">.</span></span><p>Car culture, documented at full send.</p></div>
+      <div class="foot-cols">
+        <div><h4>Explore</h4><a href="gallery.html">Gallery</a><a href="videos.html">Videos</a><a href="events.html">Events</a></div>
+        <div><h4>Creator</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div><h4>Follow</h4><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">TikTok</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="year"></span> Velocity / Koketso. All torque reserved.</span><span>Built for the strip.</span></div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
